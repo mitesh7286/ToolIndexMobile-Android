@@ -4,7 +4,7 @@ import { AuthProvider } from "../hooks/useAuth";
 export default function RootLayout() {
   return (
     <AuthProvider>
-      <Stack />
+      <Stack screenOptions={{ headerShown: false }} />
     </AuthProvider>
   );
 }

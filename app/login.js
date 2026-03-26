@@ -1,15 +1,15 @@
 import { useRouter } from "expo-router";
 import React, { useEffect, useState } from "react";
 import {
-    ActivityIndicator,
-    Alert,
-    KeyboardAvoidingView,
-    Platform,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
+  ActivityIndicator,
+  Alert,
+  KeyboardAvoidingView,
+  Platform,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
 import { supabase } from "../services/supabaseClient";
 
@@ -116,7 +116,7 @@ export default function LoginScreen() {
         </TouchableOpacity>
 
         <View style={styles.registerContainer}>
-          <Text style={styles.registerText}>Dont have an account? </Text>
+          <Text style={styles.registerText}>{`Don't have an account? `}</Text>
           <TouchableOpacity onPress={() => router.push("/register")}>
             <Text style={styles.registerLink}>Sign up</Text>
           </TouchableOpacity>
